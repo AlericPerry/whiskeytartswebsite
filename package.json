@@ -1,0 +1,26 @@
+{
+  "name": "whiskeytartswebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlericPerry/whiskeytartswebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlericPerry/whiskeytartswebsite/issues"
+  },
+  "homepage": "https://github.com/AlericPerry/whiskeytartswebsite#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1"
+  }
+}
