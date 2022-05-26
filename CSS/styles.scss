@@ -1,4 +1,7 @@
 $header-font: 'Pacifico', cursive;
+$footer-color: #495057;
+$content-color: #212529;
+$p-font: 'Nanum Gothic', sans-serif;
 
 
 
@@ -16,4 +19,148 @@ $header-font: 'Pacifico', cursive;
 
 h1, h2, h3 {
     font-family: $header-font;
+    
+}
+p {
+    font-family: $p-font
+
+}
+h1 {
+    font-size: 80px;
+    letter-spacing: 18px;
+}
+.row-content {
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+@media screen and (min-width: 601px){
+    #headerText {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 150px;
+    letter-spacing: 18px;
+
+    }
+}
+@media screen and (max-width: 600px){
+    #headerText {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 65px;
+    letter-spacing: 18px;
+
+    }
+}
+  
+header
+{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    @media screen and (min-width: 601px) {
+    background: $footer-color url(https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/65888055_375457363173556_2963402622490378240_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zH3iBvmfUD8AX-RDnzm&tn=M5fmobN0vfCJpvqI&_nc_ht=scontent-hou1-1.xx&oh=00_AT9Bvmh2c6Ton3PmFTT3l-7-DpV2WkJ2ODKKYwi1XKTnEw&oe=62B3630D) no-repeat 50% 50%;
+    }
+    @media screen and (max-width: 600px) {
+    background: $footer-color url(/img/header.jpg) no-repeat 60% 30%;
+    
+    }
+    
+    
+    
+}
+#aboutUsImage {
+    max-width: 200px;
+    max-height: 200px;
+}
+  
+footer
+{
+    width: 100%;
+    height: 300px;
+    background: $footer-color;
+    bottom: -300px;
+    position: fixed;
+    z-index: -1;
+}
+  
+.content
+{
+    height: relative;
+    min-height: 1000px;
+    background: $content-color;
+    position: relative;
+    z-index: 1;
+}
+
+.stroke-text{
+    -webkit-text-stroke:3px black;
+    -webkit-text-fill-color:white;
+  }
+
+
+
+
+
+
+
+
+#scroll-animate
+{
+    overflow: hidden;
+}
+  
+#scroll-animate-main
+{
+    width: 100%;
+    left: 0;
+    position: fixed;
+}
+  
+#heightPage,
+#heightScroll
+{
+    width: 10px;
+    top: 0;
+    position: absolute;
+    z-index: 99;
+}
+  
+#heightPage
+{
+    left: 0;
+}
+  
+#heightScroll
+{
+    right: 0;
+} 
+.wrapper-parallax {
+    margin-top: 100%;
+    margin-bottom: 300px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+  
+header,
+footer,
+#scroll-animate-main
+{
+    -webkit-transition-property: all;
+       -moz-transition-property: all;
+        transition-property: all;
+  
+    -webkit-transition-duration: 0.4s;
+       -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+  
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+       -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
